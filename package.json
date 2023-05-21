@@ -1,9 +1,6 @@
 {
     "type": "module",
     "scripts": {
-        "build": "rimraf database && mkdir -p database/CSV && mkdir database/JSON && node make.js && cp -r constant/* database/JSON"
-    },
-    "dependencies": {
-        "rimraf": "^5.0.1"
+        "build": "rm -rf database && mkdir -p database/CSV && mkdir database/JSON && node make.js && cp -r constant/* database/JSON"
     }
 }
